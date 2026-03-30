@@ -3,14 +3,14 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "tokencost"
+name = "apicost"
 version = "1.0.0"
 description = "Know your AI API costs before you spend. Calculate and compare LLM pricing from the terminal."
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.10"
 authors = [{name = "OuterSpacee"}]
-keywords = ["ai", "llm", "cost", "pricing", "tokens", "openai", "anthropic", "cli"]
+keywords = ["ai", "llm", "cost", "pricing", "tokens", "openai", "anthropic", "cli", "api"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
@@ -20,8 +20,8 @@ classifiers = [
 ]
 
 [project.scripts]
-tokencost = "tokencost.cli:main"
+apicost = "apicost.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/OuterSpacee/tokencost"
-Repository = "https://github.com/OuterSpacee/tokencost"
+Homepage = "https://github.com/OuterSpacee/apicost"
+Repository = "https://github.com/OuterSpacee/apicost"

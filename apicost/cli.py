@@ -1,8 +1,8 @@
-"""CLI interface for tokencost."""
+"""CLI interface for apicost."""
 
 import argparse
 import sys
-from tokencost.costs import calculate_cost, estimate_cost, list_models
+from apicost.costs import calculate_cost, estimate_cost, list_models
 
 
 def format_currency(amount: float) -> str:
@@ -81,7 +81,7 @@ def cmd_list(args: argparse.Namespace) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser(
-        prog="tokencost",
+        prog="apicost",
         description="Know your AI API costs before you spend.",
     )
     subparsers = parser.add_subparsers(dest="command")

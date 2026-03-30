@@ -1,12 +1,12 @@
 <div align="center">
 
-# tokencost
+# apicost
 
 **Know your AI API costs before you spend.**
 
 Calculate and compare LLM pricing from the terminal. 25+ models, all major providers.
 
-[![PyPI](https://img.shields.io/pypi/v/tokencost)](https://pypi.org/project/tokencost/)
+[![PyPI](https://img.shields.io/pypi/v/apicost)](https://pypi.org/project/apicost/)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-blue)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
@@ -18,7 +18,7 @@ Calculate and compare LLM pricing from the terminal. 25+ models, all major provi
 ## Install
 
 ```bash
-pip install tokencost
+pip install apicost
 ```
 
 ## Usage
@@ -26,7 +26,7 @@ pip install tokencost
 ### Calculate cost for a specific model
 
 ```bash
-$ tokencost calc gpt-4o -i 10000 -o 2000
+$ apicost calc gpt-4o -i 10000 -o 2000
 
   Model:    gpt-4o (OpenAI)
   Input:    10,000 tokens  →  $0.0250
@@ -38,7 +38,7 @@ $ tokencost calc gpt-4o -i 10000 -o 2000
 ### Compare costs across ALL models
 
 ```bash
-$ tokencost compare -i 10000 -o 2000
+$ apicost compare -i 10000 -o 2000
 
   Cost comparison: 10,000 input + 2,000 output tokens
 
@@ -56,13 +56,13 @@ $ tokencost compare -i 10000 -o 2000
 ### List all models and pricing
 
 ```bash
-$ tokencost list
+$ apicost list
 ```
 
 ### Use as a Python library
 
 ```python
-from tokencost import calculate_cost, estimate_cost
+from apicost import calculate_cost, estimate_cost
 
 # Exact token count
 result = calculate_cost("gpt-4o", input_tokens=5000, output_tokens=1000)
@@ -89,9 +89,9 @@ print(f"Estimated: ${result['total_cost']:.6f}")
 ## Commands
 
 ```bash
-tokencost calc <model> [-i INPUT] [-o OUTPUT]    # Calculate cost
-tokencost compare [-i INPUT] [-o OUTPUT]          # Compare all models
-tokencost list                                     # Show all models + pricing
+apicost calc <model> [-i INPUT] [-o OUTPUT]    # Calculate cost
+apicost compare [-i INPUT] [-o OUTPUT]          # Compare all models
+apicost list                                     # Show all models + pricing
 ```
 
 ## Why?
